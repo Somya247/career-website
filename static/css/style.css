@@ -1,0 +1,150 @@
+body{
+  background-color:#885f43;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+			font-size: 40px;
+  font-weight:normal;
+			color: #f8f4f1;
+  text-align:center;
+  padding-top:10px;
+		}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+			font-size: 36px;
+  font-weight:normal;
+			color: #f8f4f1;
+  text-align:center;
+  padding-top:10px;
+		}
+
+p{
+    font-family: 'Nunito', sans-serif;
+  color: rgb(89, 44, 3);
+}
+#banner{
+   width: 100%;
+    height: 260px;
+  object-fit:cover;
+}
+
+#about{
+  /* max-width:720px; */
+      width: 85%;
+			margin: 0 auto;
+			/* background-color: lightblue; */
+			padding: 20px;
+			text-align: justify;
+
+}
+
+
+#open-position {
+  text-align: center;
+  font-weight:normal;
+			color: #f8f4f1;
+}
+
+
+.custom-navbar {
+  background-color: rgb(211, 167, 126);
+  /* color:rgb(255, 255, 255); */
+}
+
+.text-custom {
+  color: #f8f4f1; 
+}
+
+.text-custom:hover{
+  color:#8B4513;
+}
+
+.custom-footer{
+   background-color: rgb(211, 167, 126);
+}
+
+.button-design{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:rgb(211, 167, 126);
+  
+
+}
+
+.button-design:hover {
+  background-color: #8B4513;
+  color: #fff;
+}
+
+.for-hover:hover{
+  background-color: #8B4513;
+  color: #fff;
+}
+
+.table-bg-custom{
+ background-color:#674833; 
+  color:#f8f4f1;
+}
+
+#postings{
+  margin-bottom:16px;
+}
+
+.job-listings {
+  padding-left: 35px !important;
+}
+
+
+
+.jobs{
+      width: 85%;
+			margin: 0 auto;
+			padding: 20px;
+			margin-bottom:16px;
+}
+
+#title{
+  color:#f8f4f1; 
+  margin-bottom:4px;
+  font-size: 19px;
+  /* font-weight:normal; */
+}
+
+
+/* media queries for responsiveness  */
+
+/* for phone */
+@media (max-width: 576px) {
+.btn-sm {
+font-size: 12px;
+padding: 4px 8px;
+}
+  .jobs {
+    padding-left: 0;
+  }
+  .job-listings{
+margin-left: -28px;
+  }
+}
+
+/* for tabs */
+@media (min-width: 768px) {
+  .btn-tablet {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius:2px;
+  }
+  .job-listings{
+
+padding-left:8px;
+  }
+}
