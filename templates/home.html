@@ -21,68 +21,113 @@
   <body>
 
     
-    <nav class="navbar navbar-expand-lg custom-navbar text-custom ">
-<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" > -->
-  <div class="container-fluid ">
-    <a class="navbar-brand text-custom" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      
+    <nav class="navbar navbar-expand-lg custom-navbar text-custom shadow-sm fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="static/coffee-logo1.png" class="logo" alt="Logo" class="d-inline-block align-top">
+      MoonBucks
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link text-custom" aria-current="page" href="#">Home</a>
-        </li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        
-        <li class="nav-item ">
-          <a class="nav-link text-custom" href="#">Contact</a>
-        </li>
 
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-custom" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-custom" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-custom" href="mailto:jiminkumar13@gmail.com?subject=%3CWrite%20your%20query%20here%3E&body=Name%20-%20%3Cgive%20your%20Name%20here%3E%0D%0A%0D%0A%3CWrite%20your%20query%20here%3E">Contact Us</a>
+        </li>
       </ul>
-      <form class="d-flex" role="search">
+
+      <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light text-custom for-hover " type="submit">Search</button>
+        <button class="btn btn-outline-light text-custom for-hover" type="submit" style="padding-left: 12px;" ><i class="bi bi-search"></i></button>
       </form>
     </div>
   </div>
 </nav>
 
+    <div class="for-height-in-nav"></div>
 
-<h1> CAREER PAGE </h1>
-   
+  <h1> CAREER PAGE </h1>
+  <img id="banner"src= "https://career-website.somsom7.repl.co/static/banner.jpg" alt="Description of image">
+ 
 
-   <img id="banner"src= "https://career-website.somsom7.repl.co/static/banner.jpg" alt="Description of image">
 
-    <div id="about">
-  <h2> ABOUT </h2>
-    <p>When looking for a job, it's important to find a company that aligns with your values and provides a positive work environment. This is especially true for coffee shops, where the atmosphere can greatly impact the customer experience.
-
-At our coffee shop, we pride ourselves on creating a warm and welcoming atmosphere for both customers and employees. Our team is made up of passionate coffee enthusiasts who love what they do, and we strive to provide them with the support and resources they need to succeed.
-
-As a member of our team, you can expect to work in a fast-paced environment where no two days are the same. You'll be surrounded by friendly faces and have the opportunity to connect with customers on a personal level. We believe that coffee is more than just a drink – it's a way to bring people together and create meaningful moments.
-
-We value diversity and inclusivity and are committed to providing a safe and supportive work environment for all of our employees. We offer competitive wages and benefits packages, as well as opportunities for growth and advancement within the company.
-
-If you're passionate about coffee and customer service, we'd love to hear from you. Join our team and help us create a community of coffee lovers!</p>
+    <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="about">
+        <h2>ABOUT US </h2>
+        <p>Finding a job that aligns with your values and provides a positive work environment is crucial. At our coffee shop, we prioritize creating a warm and welcoming atmosphere for both customers and employees. Our team consists of passionate coffee enthusiasts who love what they do, and we are committed to supporting them in their success.</p>
+        <p>As a member of our team, you can expect to work in a dynamic and fast-paced environment that offers something new every day. We believe that coffee is more than just a drink - it's a way to bring people together and create meaningful moments.</p>
+        <p>We value diversity and inclusivity, and are committed to providing a safe and supportive work environment for all employees. We offer competitive wages and benefits packages, along with opportunities for growth and advancement within the company.</p>
+        <p>If you're passionate about coffee and customer service, we would love to hear from you. Join our team and help us build a community of coffee lovers!</p>
+      </div>
+    </div>
+    <div class="col-md-6 d-none d-md-block pt-md-5">
+      <img src="https://images.unsplash.com/photo-1507914372368-b2b085b925a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="people" class="img-fluid">
+    </div>
+  </div>
 </div>
 
-  
+    <!-- <div class="card border-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Light card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+    </div>
+    </div> -->
+
+<div class="cardsbelowabout">
+  <h4 class="text-center">Explore More About Us</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://career-website.somsom7.repl.co/static/our-coffee.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <!-- <h5 class="card-title">Our Coffee</h5> -->
+        <a href="https://www.google.com"type="button" class="btn btn-outline d-flex justify-content-center cardbutton "> Our Coffee <i class="bi bi-caret-right"></i></a>
+        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+      </div>
+    </div>
+  </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://career-website.somsom7.repl.co/static/our-culture.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <!-- <h5 class="card-title">Our Culture</h5> -->
+         <a href="https://www.google.com"type="button" class="btn btn-outline d-flex justify-content-center cardbutton "> Our Culture <i class="bi bi-caret-right"></i></a>
+        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+      </div>
+    </div>
+  </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://career-website.somsom7.repl.co/static/our-partners.jpg" class="card-img-top" style="max-width: 100%;" alt="...">
+      <div class="card-body">
+        <!-- <h5 class="card-title">Our Partners</h5> -->
+         <a href="https://www.google.com"type="button" class="btn btn-outline d-flex justify-content-center cardbutton "> Our Partners <i class="bi bi-caret-right"></i></a>
+        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+      </div>
+    </div>
+  </div>
+      
+</div>
+
+</div>
+
+    
 
  <div id="open-position" class= "mb-4">
-    <h3>OPEN POSITIONS </h3>
+    <h2>OPEN POSITIONS </h2>
       </div>
 
 {% for job in jobs %}
@@ -98,14 +143,41 @@ If you're passionate about coffee and customer service, we'd love to hear from y
   </button>
 </div> -->
 
-
-<!-- <p> Copyright 2023, SC </p> -->
-
-    <!-- footer  -->
-  <footer class=" text-light py-3 custom-footer ">
-  <div class="container text-center">
     
-    <p>&copy; 2023 My Website. All Rights Reserved.</p>
+<!-- footer  --> 
+
+
+  <footer class="text-custom pt-3 custom-footer">
+  <div class="container text-center">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Info</h5>
+          <div class="footer-text-1 text-center center-info">
+          <p ><strong>Address :</strong> 562 Mum Road, Street 32, Mumbai</p>
+          <p ><strong>Phone :</strong> +91 12 3456 7890 / +91 01 2345 6789</p>
+          <p ><strong>Hours :</strong> 10:00-18:00, Wednesday Closed</p>
+          <p ><strong>Email :</strong> moonbucks@gmail.com</p>
+        </div>
+        </div>
+         <div class="col-md-6">
+        <div class="follow">
+          <h5>Follow Us</h5>
+          <div class="icon">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-pinterest"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="footer-text ">&copy; 2023 MoonBucks. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 

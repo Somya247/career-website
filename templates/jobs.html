@@ -14,6 +14,13 @@
 </div>
   </div>
 <div class="col-2">
- <button type="button" class="btn btn-primary button-design mx-auto btn-sm btn-tablet "> Apply Now </button>
+
+  <!-- without template  -->
+ <!-- <a href="mailto:jiminkumar13@gmail.com?subject=Application for {{job['title']}}"type="button" class="btn btn-primary button-design mx-auto btn-sm btn-tablet"> Apply Now </a> -->
+  <!-- mailto wasn't opening the gmail on desktop so i did this
+  Settings -> Apps -> Default apps. Scroll down and pick “Choose default apps by protocol” then set chrome to mail   -->
+
+
+   <a href="mailto:jiminkumar13@gmail.com?subject=Application%20for%20{{job['title']}}&body=Name%20-%20%3Cgive%20your%20Name%20here%3E%0D%0AResume%20Link%20-%20%3Cgive%20your%20resume%20link%3E%0D%0ALinkedIn%20Link%20-%20%3Cgive%20your%20LinkedIn%20link%3E"type="button" class="btn btn-primary button-design mx-auto btn-sm btn-tablet"> Apply Now </a>
 </div>
 </div>
