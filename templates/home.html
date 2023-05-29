@@ -17,45 +17,22 @@
     <!-- css  -->
 <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
 
+    
+<!-- favicon  -->
+<link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  <!-- <link rel="shortcut icon" type="image/jpg" href="static/favicon.ico"/>   -->
+    
   </head>
   <body>
-
     
-    <nav class="navbar navbar-expand-lg custom-navbar text-custom shadow-sm fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="static/coffee-logo1.png" class="logo" alt="Logo" class="d-inline-block align-top">
-      MoonBucks
-    </a>
+<!-- navbar -->
+{% include 'nav.html'%}
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link text-custom" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-custom" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-custom" href="mailto:jiminkumar13@gmail.com?subject=%3CWrite%20your%20query%20here%3E&body=Name%20-%20%3Cgive%20your%20Name%20here%3E%0D%0A%0D%0A%3CWrite%20your%20query%20here%3E">Contact Us</a>
-        </li>
-      </ul>
-
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light text-custom for-hover" type="submit" style="padding-left: 12px;" ><i class="bi bi-search"></i></button>
-      </form>
-    </div>
-  </div>
-</nav>
-
-    <div class="for-height-in-nav"></div>
-
-  <h1> CAREER PAGE </h1>
+  <h1> MoonBucks Career Page </h1>
   <img id="banner"src= "https://career-website.somsom7.repl.co/static/banner.jpg" alt="Description of image">
  
 
@@ -63,8 +40,9 @@
     <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <div id="about">
-        <h2>ABOUT US </h2>
+      <div id=" about">
+        <section id="aboutus">
+        <h2>About Us </h2>
         <p>Finding a job that aligns with your values and provides a positive work environment is crucial. At our coffee shop, we prioritize creating a warm and welcoming atmosphere for both customers and employees. Our team consists of passionate coffee enthusiasts who love what they do, and we are committed to supporting them in their success.</p>
         <p>As a member of our team, you can expect to work in a dynamic and fast-paced environment that offers something new every day. We believe that coffee is more than just a drink - it's a way to bring people together and create meaningful moments.</p>
         <p>We value diversity and inclusivity, and are committed to providing a safe and supportive work environment for all employees. We offer competitive wages and benefits packages, along with opportunities for growth and advancement within the company.</p>
@@ -76,7 +54,9 @@
     </div>
   </div>
 </div>
+</section>
 
+    
 <div class="cardsbelowabout">
   <h4 class="text-center">Explore More About Us</h4>
     <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -84,9 +64,9 @@
     <div class="card h-100">
       <img src="https://career-website.somsom7.repl.co/static/our-coffee.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-
+ 
         <a href="https://www.google.com"type="button" class="btn btn-outline d-flex justify-content-center cardbutton "> Our Coffee <i class="bi bi-caret-right"></i></a>
-      
+        
       </div>
     </div>
   </div>
@@ -94,19 +74,19 @@
     <div class="card h-100">
       <img src="https://career-website.somsom7.repl.co/static/our-culture.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-
+     
          <a href="https://www.google.com"type="button" class="btn btn-outline d-flex justify-content-center cardbutton "> Our Culture <i class="bi bi-caret-right"></i></a>
-       
+        
       </div>
     </div>
   </div>
       <div class="col">
     <div class="card h-100">
-      <img src="https://career-website.somsom7.repl.co/static/our-partners.jpg" class="card-img-top" alt="...">
+      <img src="https://career-website.somsom7.repl.co/static/our-partners.jpg" class="card-img-top" style="max-width: 100%;" alt="...">
       <div class="card-body">
-  
+    
          <a href="https://www.google.com"type="button" class="btn btn-outline d-flex justify-content-center cardbutton "> Our Partners <i class="bi bi-caret-right"></i></a>
-       
+        
       </div>
     </div>
   </div>
@@ -128,39 +108,10 @@
 
     
 <!-- footer  --> 
-  <footer class="text-custom pt-3 custom-footer">
-  <div class="container text-center">
-    <div class="container ">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Contact Info</h5>
-          <div class="footer-text-1 text-center center-info">
-          <p ><strong>Address :</strong> 562 Mum Road, Street 32, Mumbai</p>
-          <p ><strong>Phone :</strong> +91 12 3456 7890 / +91 01 2345 6789</p>
-          <p ><strong>Hours :</strong> 10:00-18:00, Wednesday Closed</p>
-          <p ><strong>Email :</strong> moonbucks@gmail.com</p>
-        </div>
-        </div>
-         <div class="col-md-6">
-        <div class="follow">
-          <h5>Follow Us</h5>
-          <div class="icon">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-pinterest"></i>
-            <i class="bi bi-youtube"></i>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="footer-text ">&copy; 2023 MoonBucks. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
+{% include 'footer.html'  %}
+
+
+    
   </body> 
 </html>
